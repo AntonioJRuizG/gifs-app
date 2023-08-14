@@ -25,6 +25,10 @@ Fundamental concepts worked with the project:
 
 ![Web preview](https://i.ibb.co/7YPq44B/Gifs-app.png "Web preview")
 
+## Deployment
+
+[Open app preview](https://gifs-search-engine.netlify.app/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
