@@ -46,7 +46,8 @@ export class GifsService {
   }
 
   searchTag(tag: string): void {
-    if (tag && tag.length === 0) return;
+    if (!tag || tag.length === 0) return;
+
     this.organizeHistory(tag);
 
     const params = new HttpParams()
