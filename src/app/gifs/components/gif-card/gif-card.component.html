@@ -1,0 +1,8 @@
+<div class="card mb-2 text-center bg-dark">
+  <!-- <img [src]="gif.images.fixed_height_small.url" [alt]="gif.title" class="card-img-top"> -->
+  <lazy-image [imageUrl]="gif.images.fixed_height_small.url" [imageTitle]="gif.title || 'No description'"
+    [imageWidth]="gif.images.fixed_height_small.width" [imageHeigth]="gif.images.original.height"></lazy-image>
+  <div class="card-body text-white">
+    <p class="card-text">{{gif.title || 'No title'}}</p>
+  </div>
+</div>

@@ -2,6 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
+## Technologies
+
+- Angular.
+
+## Concepts
+
+Fundamental concepts worked with the project:
+
+- Sharing data between child and parent components.
+- HTTP request with the Angular HTTP client service.
+- Pipes.
+- Lifecycle event sequence: OnInit interface.
+- Data persistence.
+
+## Features
+
+- Gifs gallery.
+- Search bar.
+- Search history.
+- Click on search history tags to take the search results again.
+
+![Web preview](https://i.ibb.co/7YPq44B/Gifs-app.png "Web preview")
+
+## Deployment
+
+[Open app preview](https://gifs-search-engine.netlify.app/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
