@@ -22,7 +22,9 @@ export class GifsService {
   }
 
   private organizeHistory(tag: string) {
-    tag = tag.toLocaleLowerCase();
+    if (!tag) return;
+
+    tag = tag.toLowerCase();
 
     if (this._tagsHistory.includes(tag)) {
       this._tagsHistory = this._tagsHistory.filter((oldTag) => oldTag !== tag);
@@ -44,7 +46,7 @@ export class GifsService {
   }
 
   searchTag(tag: string): void {
-    if (tag.length === 0) return;
+    if (tag && tag.length === 0) return;
     this.organizeHistory(tag);
 
     const params = new HttpParams()
