@@ -1,6 +1,8 @@
 <div class="d-flex justify-content-center">
-  <img [src]="imageUrl" [alt]="imageTitle" (load)="onLoad()" class="card-img-top"
+  <img [src]="imageUrl" [alt]="imageTitle" (load)="onLoad()" class="card-img-top animate__animated animate__fadeIn"
     [ngStyle]="{display: hasLoaded ? '' : 'none'}">
 
-  <img *ngIf="!hasLoaded" class="mt-2" src="../../../../assets/loader.svg" height="35" width="35">
+  <div *ngIf="!hasLoaded" class="mt-2" [ngStyle]="{height: imageHeigth + 'px', width: imageWidth + 'px'}">
+    <img src="assets/loader.svg" [alt]="imageTitle || 'No description'" [height]="35" width="35" class="mt-2">
+  </div>
 </div>

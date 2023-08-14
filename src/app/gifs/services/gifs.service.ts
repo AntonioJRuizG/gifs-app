@@ -57,7 +57,6 @@ export class GifsService {
       .get<GifsResponse>(`${this.apiEndPoint}/search`, { params })
       .subscribe((response) => {
         this.gifsList = response.data;
-        console.log(this.gifsList);
       });
   }
 }

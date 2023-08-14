@@ -12,6 +12,12 @@ export class LazyImageComponent implements OnInit {
   @Input()
   public imageTitle: string = '';
 
+  @Input()
+  public imageWidth: string = '35';
+
+  @Input()
+  public imageHeigth: string = '35';
+
   public hasLoaded: boolean = false;
 
   ngOnInit(): void {
@@ -19,7 +25,6 @@ export class LazyImageComponent implements OnInit {
   }
 
   onLoad() {
-    console.log('image loaded');
     this.hasLoaded = true;
   }
 }
